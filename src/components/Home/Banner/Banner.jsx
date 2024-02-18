@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import homebanner1 from "../../assets/images/home-banner1.png";
-import homebanner2 from "../../assets/images/home-banner2.png";
+import homebanner1 from "../../../assets/images/home-banner1.png";
+import homebanner2 from "../../../assets/images/home-banner2.png";
 
 const Banner = () => {
   return (

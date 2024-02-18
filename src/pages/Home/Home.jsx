@@ -1,4 +1,5 @@
-import Banner from "../../components/Banner/Banner";
+import Banner from "../../components/Home/Banner/Banner";
+import WhoWeAre from "../../components/Home/WhoWeAre/WhoWeAre";
 import Navbar from "../../shared/Navbar/Navbar";
 import Partner from "../../shared/Partner/Partner";
 
@@ -11,6 +12,7 @@ const Home = () => {
         <Banner></Banner>
       </div>
       <Partner></Partner>
+      <WhoWeAre></WhoWeAre>
     </div>
   );
 };

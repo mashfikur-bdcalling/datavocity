@@ -46,6 +46,7 @@ body {
   align-items: center;
   border-width: 3px;
   border-style: solid;
+  width: fit-content;
 }
 
 /* custom home banner styles */
