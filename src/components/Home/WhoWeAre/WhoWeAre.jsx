@@ -15,12 +15,18 @@ const WhoWeAre = () => {
             bring you all IT solutions—from planning and consulting to
             implementation and ongoing management.
           </p>
-          <Link
-            className="common--btn px-12 py-5 border-primaryNavy text-primaryNavy"
-            to={"/"}
-          >
-            Learn More
-          </Link>
+          <div className="hover--wrapper2 ">
+            <Link
+              to={"/"}
+              className={`common--btn px-12 py-5  border-primaryNavy relative overflow-hidden bg-[linear-gradient(180deg,_#0F0161_0%,_#386DFF_100%)] ease-in-out duration-500 text-primaryNavy  `}
+            >
+              Learn More
+              <div className="w-full h-full  absolute top-0 left-0 opacity-100  flex items-center justify-center">
+                {" "}
+                Learn More
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       {/* cover image */}

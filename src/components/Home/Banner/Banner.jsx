@@ -32,7 +32,7 @@ const Banner = () => {
                 We are committed to excellence in delivering all of your IT
                 solutions.
               </p>
-              <Link className="common--btn border-white text-white inline-block w-fit px-12 py-5 ">
+              <Link className="common--btn border-white text-white inline-block w-fit px-12 py-5 hover:bg-white hover:text-primaryBlue">
                 Learn More
               </Link>
             </div>

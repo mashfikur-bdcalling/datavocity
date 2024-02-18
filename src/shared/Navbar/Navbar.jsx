@@ -86,17 +86,22 @@ const Navbar = () => {
           </div>
 
           {/* contact button */}
-          <div>
+          <div className="hover--wrapper ">
             <Link
               to={"/"}
-              className={`common--btn px-12 py-6 uppercase border-primaryBlue ${
+              className={`common--btn px-12 py-6 uppercase border-primaryBlue relative overflow-hidden bg-[linear-gradient(180deg,_#386DFF_0%,_#9118F5_100%)] ease-in-out duration-500  ${
                 darkNav ? "text-primaryBlue " : "text-white border-black"
               } `}
             >
               Contact Us
+              <div className="w-full h-full  absolute top-0 left-0 opacity-100  flex items-center justify-center">
+                {" "}
+                Contact Us
+              </div>
             </Link>
           </div>
         </div>
+        
       </div>
     </div>
   );

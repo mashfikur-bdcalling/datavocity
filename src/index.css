@@ -47,6 +47,7 @@ body {
   border-width: 3px;
   border-style: solid;
   width: fit-content;
+  transition: 0.4s ease-in-out;
 }
 
 /* custom home banner styles */
@@ -62,4 +63,30 @@ body {
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.hover--wrapper div {
+  background-color: #232323;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+
+.hover--wrapper:hover div {
+  background-color: #232323;
+  opacity: 0;
+}
+
+.hover--wrapper2 div {
+  background-color: #fff;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+
+.hover--wrapper2:hover a {
+  background-color: linear-gradient(180deg, #0f0161 0%, #386dff 100%);
+  color: white;
+}
+
+.hover--wrapper2:hover div {
+  opacity: 0;
 }
