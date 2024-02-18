@@ -1,0 +1,15 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+/* google fonts */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+.font-humre{
+  font-family: 'Hurme Geometric Sans 3';
+}
