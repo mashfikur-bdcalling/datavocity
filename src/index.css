@@ -10,6 +10,39 @@ body {
   font-family: "Questrial", sans-serif;
 }
 
-.font-humre{
-  font-family: 'Hurme Geometric Sans 3';
+.font-humre {
+  font-family: "Hurme Geometric Sans 3";
+}
+
+/* nav link active class */
+.nav-active {
+  color: #386dff;
+  position: relative;
+}
+
+.nav-active::after {
+  content: "";
+  width: 0.375rem;
+  height: 0.375rem;
+  background-color: #386dff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* custom common button styles */
+.common--btn {
+  font-family: "Hurme Geometric Sans 3";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -0.0225rem;
+  border-radius: 1.25rem;
+  border: 3px solid #386dff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

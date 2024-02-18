@@ -1,7 +1,14 @@
+import Banner from "../../components/Banner/Banner";
+import Navbar from "../../shared/Navbar/Navbar";
+
 const Home = () => {
   return (
     <div>
-      <h3 className="text-4xl text-center font-humre font-normal">this is home</h3>
+      {/* navbar and banner wrapper */}
+      <div className="bg-[#232323]">
+        <Navbar></Navbar>
+        <Banner></Banner>
+      </div>
     </div>
   );
 };
