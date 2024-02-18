@@ -16,7 +16,7 @@ const Navbar = () => {
   }, [path]);
   return (
     <div>
-      <div className="max-w-customWidth mx-auto flex items-center justify-between pt-[2.75rem] pb-12">
+      <div className="max-w-customWidth mx-auto flex items-center justify-between pt-[2.75rem] ">
         {/* main logo */}
         <div className=" w-[15.25rem] h-[2.6875rem] ">
           {darkNav ? (
@@ -89,8 +89,8 @@ const Navbar = () => {
           <div>
             <Link
               to={"/"}
-              className={`common--btn px-12 py-6 ${
-                darkNav ? "text-primaryBlue" : "text-white"
+              className={`common--btn px-12 py-6 uppercase border-primaryBlue ${
+                darkNav ? "text-primaryBlue " : "text-white border-black"
               } `}
             >
               Contact Us

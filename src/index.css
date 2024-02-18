@@ -41,8 +41,24 @@ body {
   line-height: 132%;
   letter-spacing: -0.0225rem;
   border-radius: 1.25rem;
-  border: 3px solid #386dff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-width: 3px;
+  border-style: solid;
+}
+
+/* custom home banner styles */
+.custom--banner {
+  background-image: url("./assets/images/custom--banner-bg.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.mini-hero-bg {
+  background-image: url("./assets/images/mini-hero-bg.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
