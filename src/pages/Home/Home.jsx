@@ -1,4 +1,5 @@
 import Banner from "../../components/Home/Banner/Banner";
+import Industry from "../../components/Home/Industry/Industry";
 import Services from "../../components/Home/Services/Services";
 import WhoWeAre from "../../components/Home/WhoWeAre/WhoWeAre";
 import Navbar from "../../shared/Navbar/Navbar";
@@ -15,6 +16,7 @@ const Home = () => {
       <Partner></Partner>
       <WhoWeAre></WhoWeAre>
       <Services></Services>
+      <Industry></Industry>
     </div>
   );
 };

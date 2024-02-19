@@ -2,9 +2,11 @@ import SectionText from "../SectionText/SectionText";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import ServiceCardWrapper from "./ServiceCardWrapper";
 
+import "./Services.css";
+
 const Services = () => {
   return (
-    <div className="bg-[#f9f3fe] py-40 ">
+    <div className="bg-[#f9f3fe] py-40 pb-48 service-section ">
       {/* content wrapper */}
       <div className="max-w-customWidth mx-auto">
         {/* intro section */}

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const SectionText = ({ children, btnColor }) => {
+const SectionText = ({ children, btnColor = "#fff" }) => {
   return (
     <div>
       <p className="text-2xl text-[#232323] pb-7">{children}</p>

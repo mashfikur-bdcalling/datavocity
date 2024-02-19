@@ -1,0 +1,25 @@
+.industry-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.4s ease-in-out;
+}
+
+.industry-card h3,
+.industry-card p {
+  transition: 0.4s ease-in-out;
+}
+.industry-card:hover {
+  transform: rotateY(180deg);
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.industry-card:hover h3,
+.industry-card:hover p {
+  transform: rotateY(180deg);
+}
+
+/* .industry-card:hover h3 {
+  padding-left: 100px;
+} */
