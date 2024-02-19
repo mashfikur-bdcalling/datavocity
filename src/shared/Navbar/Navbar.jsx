@@ -4,14 +4,14 @@ import mainDarkLogo from "../../assets/images/main-dark-logo.png";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [darkNav, setDarkNav] = useState(false);
+  const [whiteNav, setWhiteNav] = useState(false);
   const location = useLocation();
   let path = location.pathname;
   useEffect(() => {
     if (path === "/about-us") {
-      setDarkNav(true);
+      setWhiteNav(true);
     } else {
-      setDarkNav(false);
+      setWhiteNav(false);
     }
   }, [path]);
   return (
@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="max-w-customWidth mx-auto flex items-center justify-between pt-[2.75rem] ">
         {/* main logo */}
         <div className=" w-[15.25rem] h-[2.6875rem] ">
-          {darkNav ? (
+          {whiteNav ? (
             <img
               className="w-full h-full object-contain"
               src={mainDarkLogo}
@@ -39,7 +39,7 @@ const Navbar = () => {
           <div>
             <ul
               className={`flex items-center gap-[3.75rem] text-[1.125rem] font-humre font-semibold  uppercase ${
-                darkNav ? "text-black" : "text-white"
+                whiteNav ? "text-black" : "text-white"
               } `}
             >
               <li>
@@ -86,22 +86,29 @@ const Navbar = () => {
           </div>
 
           {/* contact button */}
-          <div className="hover--wrapper ">
+          <div
+            className={`hover--wrapper ${
+              whiteNav ? "hover--wrapper--white " : ""
+            } `}
+          >
             <Link
               to={"/"}
-              className={`common--btn px-12 py-6 uppercase border-primaryBlue relative overflow-hidden bg-[linear-gradient(180deg,_#386DFF_0%,_#9118F5_100%)] ease-in-out duration-500  ${
-                darkNav ? "text-primaryBlue " : "text-white border-black"
+              className={`common--btn px-12 py-6 uppercase border-primaryBlue relative overflow-hidden ease-in-out duration-500  ${
+                whiteNav ? "text-primaryBlue " : "text-white border-black "
               } `}
             >
               Contact Us
-              <div className="w-full h-full  absolute top-0 left-0 opacity-100  flex items-center justify-center">
+              <div
+                className={`w-full h-full  absolute top-0 left-0 opacity-100  flex items-center justify-center ${
+                  whiteNav ? "bg-[#fff!important] " : ""
+                }`}
+              >
                 {" "}
                 Contact Us
               </div>
             </Link>
           </div>
         </div>
-        
       </div>
     </div>
   );

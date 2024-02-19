@@ -65,6 +65,12 @@ body {
   background-repeat: no-repeat;
 }
 
+/* button 1 */
+.hover--wrapper a {
+  background: linear-gradient(180deg, #386dff 0%, #9118f5 100%);
+  display: inline-block;
+}
+
 .hover--wrapper div {
   background-color: #232323;
   opacity: 1;
@@ -72,12 +78,24 @@ body {
 }
 
 .hover--wrapper:hover div {
-  background-color: #232323;
   opacity: 0;
 }
 
+.hover--wrapper--white:hover a {
+  color: white;
+}
+
+/* button 2 */
+
+.hover--wrapper2 {
+  width: fit-content;
+}
+
+.hover--wrapper2 a {
+  display: block;
+}
+
 .hover--wrapper2 div {
-  background-color: #fff;
   opacity: 1;
   transition: 0.4s ease-in-out;
 }

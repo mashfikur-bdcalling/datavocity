@@ -1,0 +1,13 @@
+.service-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service-card:hover .cardShape {
+  top: 80px;
+}
+
+.service-card:hover .linkArrow div:last-child {
+  margin-right: 320px;
+}
