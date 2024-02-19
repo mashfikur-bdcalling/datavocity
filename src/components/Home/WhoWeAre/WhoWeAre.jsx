@@ -4,7 +4,7 @@ import SectionText from "../SectionText/SectionText";
 
 const WhoWeAre = () => {
   return (
-    <div className="py-32 max-w-customWidth mx-auto ">
+    <div className="py-32 container mx-auto ">
       {/* content wrapper */}
       <div className="flex items-start justify-between">
         <SectionTitle>Who We Are?</SectionTitle>

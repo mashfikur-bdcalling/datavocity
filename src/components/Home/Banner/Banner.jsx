@@ -4,7 +4,7 @@ import homebanner2 from "../../../assets/images/home-banner2.png";
 
 const Banner = () => {
   return (
-    <div className="py-12 max-w-customWidth mx-auto">
+    <div className="py-12 container mx-auto">
       {/* main banner wrapper */}
       <div className=" custom--banner">
         <div className="flex flex-col gap-12">

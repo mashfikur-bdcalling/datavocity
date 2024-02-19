@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className="bg-[#f9f3fe] py-40 pb-48 service-section ">
       {/* content wrapper */}
-      <div className="max-w-customWidth mx-auto">
+      <div className="container mx-auto">
         {/* intro section */}
         <div className="flex justify-between items-start pb-[7rem]">
           <div>

@@ -6,7 +6,7 @@ const Industry = () => {
   return (
     <div className="py-32">
       {/* content wrapper */}
-      <div className="max-w-customWidth mx-auto">
+      <div className="container mx-auto">
         {/* intro section */}
         <div className="flex items-start justify-between pb-32">
           <div>

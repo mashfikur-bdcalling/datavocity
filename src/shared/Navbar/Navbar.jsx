@@ -16,7 +16,7 @@ const Navbar = () => {
   }, [path]);
   return (
     <div>
-      <div className="max-w-customWidth mx-auto flex items-center justify-between pt-[2.75rem] ">
+      <div className="container mx-auto flex items-center justify-between pt-[2.75rem] ">
         {/* main logo */}
         <div className=" w-[15.25rem] h-[2.6875rem] ">
           {whiteNav ? (
