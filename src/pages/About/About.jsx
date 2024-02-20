@@ -1,10 +1,12 @@
 import Navbar from "../../shared/Navbar/Navbar";
+import Subscription from "../../shared/Subscription/Subscription";
 
 const About = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <h3>this is about</h3>
+      <div className="py-32"></div>
+      <Subscription></Subscription>
     </div>
   );
 };
