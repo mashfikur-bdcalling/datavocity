@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Lenis from "@studio-freight/lenis";
+import Footer from "../shared/Footer/Footer";
 
 const Layout = () => {
   const lenis = new Lenis();
@@ -13,6 +14,7 @@ const Layout = () => {
   return (
     <div>
       <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };

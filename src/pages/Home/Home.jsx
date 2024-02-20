@@ -6,6 +6,7 @@ import Solutions from "../../components/Home/Solutions/Solutions";
 import WhoWeAre from "../../components/Home/WhoWeAre/WhoWeAre";
 import Navbar from "../../shared/Navbar/Navbar";
 import Partner from "../../shared/Partner/Partner";
+import Subscription from "../../shared/Subscription/Subscription";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Industry></Industry>
       <Solutions></Solutions>
       <Blogs></Blogs>
+      <Subscription></Subscription>
     </div>
   );
 };
