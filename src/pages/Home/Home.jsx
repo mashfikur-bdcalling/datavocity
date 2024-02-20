@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       {/* navbar and banner wrapper */}
-      <div className="bg-[#232323]">
+      <div className="bg-[#232323] ">
         <Navbar></Navbar>
         <Banner></Banner>
       </div>

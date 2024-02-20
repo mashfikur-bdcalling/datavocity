@@ -11,14 +11,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // custom css
-import "./BlogSlider.css"
+import "./BlogSlider.css";
 
 // import pagination modules
 import { Pagination } from "swiper/modules";
 
 const BlogSlider = () => {
   return (
-    <div>
+    <div className="">
       <Swiper
         loop={true}
         pagination={true}
@@ -26,6 +26,14 @@ const BlogSlider = () => {
         className="mySwiper"
         slidesPerView={3}
         spaceBetween={25}
+        breakpoints={{
+          375: {
+            slidesPerView: 1,
+          },
+          1520: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
           <SwiperSlide key={i}>

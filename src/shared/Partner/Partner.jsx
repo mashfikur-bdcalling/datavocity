@@ -6,48 +6,36 @@ import company4 from "../../assets/images/company4.svg";
 import company5 from "../../assets/images/company5.svg";
 
 const Partner = () => {
+  let logoArray = [company1, company2, company3, company4, company5];
+
   return (
-    <div className="pt-16 bg-[#f5f7ff] ">
-      <h3 className="text-center text-2xl text-black font-normal">
+    <div className=" pt-10 2xl:pt-16 bg-[#f5f7ff] ">
+      <h3 className="text-center text-xl 2xl:text-2xl text-black font-normal">
         Companies We Worked With
       </h3>
 
       {/* slider wrapper */}
-      <div className="pb-20 pt-[3.5rem]">
+      <div className=" pb-10 pt-10 2xl:pb-20 2xl:pt-[3.5rem]">
         <Marquee speed={100} pauseOnHover={true}>
           <div className="flex gap-12 pl-12 ">
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company1} alt="" />
-            </div>
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company2} alt="" />
-            </div>
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company3} alt="" />
-            </div>
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company4} alt="" />
-            </div>
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company5} alt="" />
-            </div>
+            {logoArray.map((logo, i) => (
+              <div
+                key={i}
+                className=" w-[8rem] h-[2rem] 2xl:w-[10.5rem]   2xl:h-[3.25rem]"
+              >
+                <img className="w-full h-full" src={logo} alt="" />
+              </div>
+            ))}
           </div>
           <div className="flex gap-12 pl-12 ">
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company1} alt="" />
-            </div>
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company2} alt="" />
-            </div>
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company3} alt="" />
-            </div>
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company4} alt="" />
-            </div>
-            <div className="w-[10.5rem] h-[3.25rem]">
-              <img className="w-full h-full" src={company5} alt="" />
-            </div>
+            {logoArray.map((logo, i) => (
+              <div
+                key={i}
+                className=" w-[8rem] h-[2rem] 2xl:w-[10.5rem]   2xl:h-[3.25rem]"
+              >
+                <img className="w-full h-full" src={logo} alt="" />
+              </div>
+            ))}
           </div>
         </Marquee>
       </div>

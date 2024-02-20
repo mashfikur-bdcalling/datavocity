@@ -9,5 +9,14 @@
 }
 
 .service-card:hover .linkArrow div:last-child {
-  margin-right: 320px;
+  padding-right: 320px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 479px) {
+  .service-card:hover .linkArrow div:last-child {
+    padding-right: 100px;
+  }
+  .service-card {
+    background-size: 100% 100%;
+  }
 }

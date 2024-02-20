@@ -6,11 +6,11 @@ import "./Services.css";
 
 const Services = () => {
   return (
-    <div className="bg-[#f9f3fe] py-40 pb-48 service-section ">
+    <div className="bg-[#f9f3fe] py-10 px-6 2xl:px-6  2xl:py-40 2xl:pb-48 service-section ">
       {/* content wrapper */}
       <div className="container mx-auto">
         {/* intro section */}
-        <div className="flex justify-between items-start pb-[7rem]">
+        <div className="flex flex-col 2xl:flex-row justify-between items-start pb-8 2xl:pb-28">
           <div>
             <SectionTitle>Services We Provide</SectionTitle>
           </div>

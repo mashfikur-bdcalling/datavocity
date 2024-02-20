@@ -108,3 +108,16 @@ body {
 .hover--wrapper2:hover div {
   opacity: 0;
 }
+
+/* responsive common styles */
+@media screen and (min-width: 375px) and (max-width: 479px) {
+  .common--btn {
+    font-size: 1rem;
+  }
+  .custom--banner {
+    background: none;
+  }
+  .mini-hero-bg{
+    background: none;
+  }
+}

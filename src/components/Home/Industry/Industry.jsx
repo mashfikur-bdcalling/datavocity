@@ -4,15 +4,15 @@ import IndustryCardWrapper from "./IndustryCardWrapper";
 
 const Industry = () => {
   return (
-    <div className="py-32">
+    <div className=" py-10 2xl:py-32 px-6 2xl:px-0">
       {/* content wrapper */}
       <div className="container mx-auto">
         {/* intro section */}
-        <div className="flex items-start justify-between pb-32">
+        <div className="flex items-start flex-col 2xl:flex-row justify-between pb-32">
           <div>
             <SectionTitle>Industries We Serve</SectionTitle>
           </div>
-          <div className="max-w-[70%]">
+          <div className="2xl:max-w-[70%]">
             <SectionText>
               We understand that the IT demands of an educational institution
               are far different from the needs and concerns of a healthcare

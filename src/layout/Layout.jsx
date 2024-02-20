@@ -12,7 +12,7 @@ const Layout = () => {
 
   requestAnimationFrame(raf);
   return (
-    <div>
+    <div className="">
       <Outlet></Outlet>
       <Footer></Footer>
     </div>

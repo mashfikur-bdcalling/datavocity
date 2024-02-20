@@ -25,7 +25,7 @@ const IndustryCard = ({
             cardType1 ? cardbg1 : cardType2 ? cardbg2 : cardType3 ? cardbg3 : ""
           })`,
         }}
-        className="pl-10 pt-10 industry-card w-[27.5rem] h-[32.5rem] relative "
+        className="pl-10 pt-10 industry-card 2xl:w-[27.5rem] 2xl:h-[32.5rem] relative "
       >
         <h3 className="font-humre font-semibold text-white leading-[3rem] text-[2rem] tracking-[0.04rem] pb-2 max-w-[17.3rem]">
           {cardTitle}

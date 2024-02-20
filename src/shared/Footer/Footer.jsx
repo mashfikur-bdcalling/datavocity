@@ -16,7 +16,7 @@ const Footer = () => {
       {/* content wrapper */}
       <div className="container mx-auto  ">
         {/* upper footer */}
-        <div className="flex items-start gap-28 pb-40">
+        <div className="flex flex-col 2xl:flex-row items-start gap-28 pb-40">
           <div>
             <img className="w-80 h-14 object-contain " src={mainLogo} alt="" />
             <p className="leading-10 text-xl max-w-[26rem] pt-12">
@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
 
         {/* lower footer*/}
-        <div className="pt-5 border-t-2 border-white flex items-center justify-between text-base leading-8">
+        <div className="pt-5 border-t-2 border-white flex flex-col 2xl:flex-row items-center justify-between text-base leading-8">
           <div>
             <p>© 2024 Datavocity Network Enterprise, All Rights Reserved.</p>
           </div>

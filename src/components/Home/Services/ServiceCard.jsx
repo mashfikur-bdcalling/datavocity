@@ -28,15 +28,15 @@ const ServiceCard = ({
             cardType1 ? cardbg1 : cardType2 ? cardbg2 : cardType3 ? cardbg3 : ""
           })`,
         }}
-        className="w-[40.5rem] h-[24rem] service-card pl-28 py-[2.3rem] pr-[2.6rem] relative overflow-hidden"
+        className=" w-full h-fit px-4 2xl:w-[40.5rem] 2xl:h-[24rem] service-card 2xl:pl-28 py-4 2xl:py-[2.3rem] 2xl:pr-[2.6rem] relative overflow-hidden "
       >
         {/* card title */}
-        <h3 className="font-humre font-semibold text-[2rem] leading-[3rem] tracking-[0.05rem] text-white relative z-10 h-24">
+        <h3 className="font-humre font-semibold text-xl 2xl:text-[2rem] 2xl:leading-[3rem] tracking-[0.05rem] text-white relative z-10 2xl:h-24">
           {" "}
           {cardTitle}{" "}
         </h3>
 
-        <p className="text-2xl text-white leading-10 pt-5 pb-9 relative z-10 ">
+        <p className=" text-lg 2xl:text-2xl text-white 2xl:leading-10 pt-5 pb-9 relative z-10 ">
           {children}
         </p>
 
@@ -44,15 +44,15 @@ const ServiceCard = ({
         <div className="flex items-center justify-between relative z-10  linkArrow">
           <div className="duration-300 ease-in-out">
             <Link
-              className="underline font-semibold font-humre text-white text-[1.35rem] leading-[1.8rem] tracking-[-0.01375rem]"
+              className="underline pl-12 2xl:pl-0 font-semibold font-humre text-white 2xl:text-[1.35rem] 2xl:leading-[1.8rem] tracking-[-0.01375rem]"
               to={"/"}
             >
               Learn More
             </Link>
           </div>
 
-          <div className="duration-300 ease-in-out">
-            <img src={arrow} alt="" />
+          <div className="duration-300 ease-in-out  ">
+            <img className="w-[80%] 2xl:w-fit" src={arrow} alt="" />
           </div>
         </div>
 

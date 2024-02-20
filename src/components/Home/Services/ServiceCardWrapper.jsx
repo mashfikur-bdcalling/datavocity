@@ -4,7 +4,7 @@ const ServiceCardWrapper = () => {
   return (
     <div>
       {/* card container */}
-      <div className="grid grid-cols-2 gap-7">
+      <div className="grid 2xl:grid-cols-2 gap-7">
         <ServiceCard
           cardType1={true}
           cardTitle={"Cloud + Data Center Transformation"}

@@ -4,7 +4,7 @@ const IndustryCardWrapper = () => {
   return (
     <div>
       {/* card wrapper */}
-      <div className="grid grid-cols-3 gap-y-6 gap-x-6 ">
+      <div className="grid 2xl:grid-cols-3 gap-y-6 gap-x-6 ">
         <IndustryCard cardTitle={"Automotive"} cardType3={true}>
           New technologies have changed how automotive dealerships do business.
           We help manage your IT services by increasing the speed and efficiency

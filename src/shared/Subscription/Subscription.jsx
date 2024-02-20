@@ -10,7 +10,7 @@ const Subscription = () => {
       className="bg-cover bg-center bg-no-repeat mx-5 py-12 rounded-3xl overflow-hidden -mb-16 relative z-30 "
     >
       {/* content wrapper */}
-      <div className="container flex items-center gap-10 justify-center ">
+      <div className="container flex flex-col 2xl:flex-row items-center gap-10 justify-center ">
         <div>
           <h3 className="font-humre text-4xl font-semibold leading-10 text-white">
             Stay up to date on all Datavocity news
