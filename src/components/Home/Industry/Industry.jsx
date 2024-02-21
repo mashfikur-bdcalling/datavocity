@@ -8,7 +8,7 @@ const Industry = () => {
       {/* content wrapper */}
       <div className="container mx-auto">
         {/* intro section */}
-        <div className="flex items-start flex-col 2xl:flex-row justify-between pb-32">
+        <div className="flex items-start flex-col 2xl:flex-row justify-between pb-10 2xl:pb-32">
           <div>
             <SectionTitle>Industries We Serve</SectionTitle>
           </div>

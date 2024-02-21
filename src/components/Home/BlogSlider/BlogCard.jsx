@@ -5,22 +5,22 @@ const BlogCard = ({ blogTitle, blogThumb, children }) => {
   return (
     <div>
       {/* content wrapper */}
-      <div className="bg-primaryBlue w-fit p-6 rounded-[1.85rem]">
-        <div className="w-[23.5rem] h-[23.3rem] rounded-[1.85rem] overflow-hidden">
+      <div className="bg-primaryBlue w-fit p-4 2xl:p-6 rounded-[1.85rem]">
+        <div className=" w-[100%] h-[15rem] 2xl:w-[23.5rem] 2xl:h-[23.3rem] rounded-[1.85rem] overflow-hidden">
           <img className="w-full h-full object-cover" src={blogThumb} alt="" />
         </div>
 
         {/* blog text */}
-        <div className="space-y-6 pt-6">
-          <h3 className="font-humre font-semibold text-[2rem] leading-[3rem] max-w-[20rem] text-white">
+        <div className=" space-y-3 pt-3  2xl:space-y-6 2xl:pt-6">
+          <h3 className="font-humre font-semibold text-2xl 2xl:text-[2rem] 2xl:leading-[3rem] max-w-[20rem] text-white">
             {blogTitle}
           </h3>
-          <p className="text-2xl text-white leading[2.5rem] max-w-[23.3rem]">
+          <p className=" text-lg 2xl:text-2xl text-white 2xl:leading[2.5rem] max-w-[23.3rem]">
             {children}
           </p>
           <Link
             to={"/"}
-            className="font-humre text-white underline capitalize text-[1.375rem] block w-fit"
+            className="font-humre text-lg text-white underline capitalize 2xl:text-[1.375rem] block w-fit"
           >
             Read More
           </Link>

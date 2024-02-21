@@ -7,22 +7,22 @@ const Subscription = () => {
       style={{
         backgroundImage: `url(${bg})`,
       }}
-      className="bg-cover bg-center bg-no-repeat mx-5 py-12 rounded-3xl overflow-hidden -mb-16 relative z-30 "
+      className="bg-cover bg-center bg-no-repeat mx-5 py-6 2xl:py-12 rounded-3xl overflow-hidden -mb-16 relative z-30 "
     >
       {/* content wrapper */}
-      <div className="container flex flex-col 2xl:flex-row items-center gap-10 justify-center ">
+      <div className="container flex flex-col 2xl:flex-row items-center gap-5 2xl:gap-10 justify-center ">
         <div>
-          <h3 className="font-humre text-4xl font-semibold leading-10 text-white">
+          <h3 className="font-humre text-2xl text-center 2xl:text-start 2xl:text-4xl font-semibold  leading-8 pb-4 2xl:pb-0 2xl:leading-10 text-white">
             Stay up to date on all Datavocity news
           </h3>
-          <p className="text-white text-2xl leading-10 ">
+          <p className="text-white text-base text-center 2xl:text-start 2xl:text-2xl leading-8 2xl:leading-10 ">
             Sign up for our free newsletter to keep up to date on all our
             technology solutions.
           </p>
         </div>
         <div>
           <Link
-            className="inline-block text-white font-humre font-semibold text-xl  px-14 py-5 border-[3px] rounded-[1.25rem] duration-500 ease-in-out hover:bg-white hover:text-primaryBlue"
+            className="inline-block text-white font-humre font-semibold text-lg 2xl:text-xl px-6 py-3  2xl:px-14 2xl:py-5 border-[3px] rounded-[1.25rem] duration-500 ease-in-out hover:bg-white hover:text-primaryBlue"
             to={"/"}
           >
             Subscribe Today
@@ -31,7 +31,7 @@ const Subscription = () => {
       </div>
 
       {/* shape 1 */}
-      <div className="absolute top-0 left-0  ">
+      <div className="absolute top-0 left-0  hidden 2xl:block ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="249"
@@ -49,7 +49,7 @@ const Subscription = () => {
       </div>
 
       {/* shape 2 */}
-      <div className="absolute right-0 -top-6">
+      <div className="absolute right-0 -top-6 hidden 2xl:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="271"

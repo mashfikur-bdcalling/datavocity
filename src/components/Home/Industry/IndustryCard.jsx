@@ -25,17 +25,17 @@ const IndustryCard = ({
             cardType1 ? cardbg1 : cardType2 ? cardbg2 : cardType3 ? cardbg3 : ""
           })`,
         }}
-        className="pl-10 pt-10 industry-card 2xl:w-[27.5rem] 2xl:h-[32.5rem] relative "
+        className=" pl-4 pt-4   2xl:pl-10 2xl:pt-10 industry-card 2xl:w-[27.5rem] 2xl:h-[32.5rem] relative "
       >
-        <h3 className="font-humre font-semibold text-white leading-[3rem] text-[2rem] tracking-[0.04rem] pb-2 max-w-[17.3rem]">
+        <h3 className="font-humre text-xl font-semibold text-white 2xl:leading-[3rem] 2xl:text-[2rem] tracking-[0.04rem] pb-2 max-w-[17.3rem]">
           {cardTitle}
         </h3>
-        <p className="text-xl font-normal leading-[2.18rem] max-w-[17.3rem] text-white">
+        <p className="2xl:text-xl text-base leading-8 pr-8 2xl:pr-0 font-normal 2xl:leading-[2.18rem] pb-14 2xl:pb-0 max-w-[17.3rem] text-white">
           {children}
         </p>
 
         {/* arrow button */}
-        <div className="w-[2.5rem] h-[2.5rem] absolute bottom-5 right-5 -rotate-45">
+        <div className=" w-6 h-6 2xl:w-[2.5rem] 2xl:h-[2.5rem] absolute bottom-3 right-5 2xl:bottom-5 2xl:right-5 -rotate-45">
           <Link to={"/"}>
             <img className="w-full h-full" src={arrow} alt="" />
           </Link>

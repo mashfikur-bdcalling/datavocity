@@ -7,19 +7,19 @@ const Solutions = () => {
       style={{
         backgroundImage: `url(${bg})`,
       }}
-      className="bg-center bg-no-repeat bg-contain mx-5 overflow-hidden  relative"
+      className="bg-center bg-no-repeat bg-cover 2xl:bg-contain mx-5 overflow-hidden  relative rounded-xl 2xl:rounded-none"
     >
       {/* conetnt-wrapper */}
-      <div className="pt-24 pb-14 text-center">
-        <h3 className="font-humre font-semibold text-white text-[2.5rem] leading-[3rem] tracking-[-0.025rem] ">
+      <div className=" py-10 2xl:pt-24 2xl:pb-14 px-4 2xl:px-0 text-center  ">
+        <h3 className="font-humre font-semibold text-white 2xl:text-[2.5rem] 2xl:leading-[3rem] text-2xl p leading-10 tracking-[-0.025rem] ">
           Ready to find out more ?
         </h3>
-        <p className="font-normal text-2xl leading-10 pt-8 pb-14 max-w-[56rem] mx-auto text-white">
+        <p className="font-normal 2xl:text-2xl 2xl:leading-10 2xl:pt-8 2xl:pb-14 max-w-[56rem] mx-auto text-white py-4 2xl:py-0">
           From technology procurement to managed services, Datavocity is
           committed to excellence in delivering end-to-end technology solutions.
         </p>
         <Link
-          className="font-humre px-12 py-5 border-white text-white rounded-[1.25rem] border-[3px] text-[1.125rem] flex items-center justify-center w-fit mx-auto hover:bg-white font-semibold hover:text-primaryBlue duration-500 "
+          className="font-humre px-6 py-3 text-sm 2xl:px-12 2xl:py-5 border-white text-white rounded-[1.25rem] border-[3px] 2xl:text-[1.125rem] flex items-center justify-center w-fit mx-auto hover:bg-white font-semibold hover:text-primaryBlue duration-500 "
           to={"/"}
         >
           Explore Solutions
@@ -27,7 +27,7 @@ const Solutions = () => {
       </div>
 
       {/* shape 1 */}
-      <div className="absolute top-0 left-0">
+      <div className="absolute top-0 left-0 hidden 2xl:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="465"
@@ -43,16 +43,16 @@ const Solutions = () => {
         </svg>
       </div>
       {/* shape 2 */}
-      <div className="absolute top-12 right-0  ">
+      <div className="absolute top-12 right-0 hidden 2xl:block  ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="473"
           height="334"
           viewBox="0 0 473 334"
           fill="none"
-          strokeWidth={'1px'}
+          strokeWidth={"1px"}
           stroke=""
-          opacity={'0.5'}
+          opacity={"0.5"}
         >
           <path
             d="M807.782 28.8855C807.769 22.2381 805.119 15.8676 800.413 11.172C795.708 6.47633 789.332 3.83915 782.685 3.83917V-3.83984C791.369 -3.83985 799.698 -0.393686 805.843 5.74205C811.989 11.8778 815.448 20.2015 815.461 28.8855H807.782ZM807.782 105.765V28.8855H815.461V105.765H807.782ZM782.685 130.812C789.332 130.812 795.708 128.174 800.413 123.479C805.119 118.783 807.769 112.413 807.782 105.765H815.461C815.448 114.449 811.989 122.773 805.843 128.909C799.698 135.044 791.369 138.491 782.685 138.491V130.812ZM249.275 130.812H782.685V138.491H249.288L249.275 130.812ZM194.844 185.179C194.854 170.752 200.594 156.92 210.801 146.724C221.009 136.529 234.848 130.805 249.275 130.812V138.491C236.884 138.484 224.999 143.399 216.231 152.154C207.464 160.909 202.533 172.788 202.523 185.179H194.844ZM194.844 304.204V185.179H202.523V304.204H194.844ZM169.746 329.25C176.392 329.247 182.766 326.608 187.471 321.914C192.175 317.219 194.827 310.85 194.844 304.204H202.523C202.509 312.888 199.05 321.211 192.904 327.347C186.759 333.483 178.43 336.929 169.746 336.929V329.25ZM28.9641 329.25H169.746V336.929H28.9641V329.25ZM3.86651 304.204C3.88007 310.851 6.53033 317.222 11.2356 321.917C15.9408 326.613 22.3166 329.25 28.9641 329.25V336.929C20.28 336.929 11.951 333.483 5.80564 327.347C-0.339694 321.211 -3.79894 312.888 -3.8125 304.204H3.86651ZM3.86651 163.601V304.204H-3.8125V163.537L3.86651 163.601ZM28.9641 138.555C22.3166 138.555 15.9408 141.192 11.2356 145.887C6.53033 150.583 3.88007 156.954 3.86651 163.601H-3.8125C-3.79894 154.917 -0.339694 146.593 5.80564 140.458C11.951 134.322 20.28 130.876 28.9641 130.876V138.555ZM148.104 138.555H28.9641V130.876H148.104V138.555ZM202.548 84.2001C202.535 98.6272 196.791 112.458 186.581 122.651C176.372 132.844 162.531 138.565 148.104 138.555V130.876C160.494 130.886 172.382 125.974 181.152 117.221C189.921 108.468 194.856 96.5906 194.869 84.2001H202.548ZM202.548 28.9495V84.2001H194.869V28.9495H202.548ZM227.633 3.90307C220.988 3.90644 214.615 6.54513 209.913 11.2404C205.21 15.9357 202.562 22.3043 202.548 28.9495H194.869C194.879 20.2667 198.336 11.943 204.479 5.80688C210.622 -0.329216 218.95 -3.77595 227.633 -3.77595V3.90307ZM782.71 3.90307H227.607V-3.77595H782.685L782.71 3.90307Z"

@@ -7,19 +7,24 @@ import icon3 from "../../assets/images/icon3.png";
 import icon4 from "../../assets/images/icon4.png";
 
 const Footer = () => {
-  const ulTitle = "font-humre text-2xl font-serif leading-7 pb-8";
+  const ulTitle =
+    "font-humre text-xl 2xl:text-2xl font-serif leading-7 pb-4 2xl:pb-8";
   const liStyles =
-    "font-humre text-xl font-semibold leading-6 flex flex-col gap-7";
+    "font-humre text-lg 2xl:text-xl font-semibold leading-6 flex flex-col  gap-4 2xl:gap-7";
 
   return (
     <div className="bg-primaryNavy pt-32 pb-8 text-white">
       {/* content wrapper */}
-      <div className="container mx-auto  ">
+      <div className="container mx-auto px-6 2xl:px-0  ">
         {/* upper footer */}
-        <div className="flex flex-col 2xl:flex-row items-start gap-28 pb-40">
+        <div className="flex flex-col 2xl:flex-row items-start 2xl:gap-28 gap-10 pb-14 2xl:pb-40">
           <div>
-            <img className="w-80 h-14 object-contain " src={mainLogo} alt="" />
-            <p className="leading-10 text-xl max-w-[26rem] pt-12">
+            <img
+              className=" w-40 h-fit 2xl:w-80 2xl:h-14 object-contain "
+              src={mainLogo}
+              alt=""
+            />
+            <p className=" leading-8 2xl:leading-10 text-xl max-w-[26rem] pt-4 2xl:pt-12">
               We are committed to excellence in delivering all of your IT
               solutions.
             </p>
@@ -59,7 +64,7 @@ const Footer = () => {
           </div>
           <div>
             <p className={ulTitle}>Social Links</p>
-            <ul className="flex gap-9">
+            <ul className="flex gap-6 2xl:gap-9">
               <li>
                 <Link>
                   <img src={icon1} alt="" />
@@ -85,20 +90,23 @@ const Footer = () => {
         </div>
 
         {/* lower footer*/}
-        <div className="pt-5 border-t-2 border-white flex flex-col 2xl:flex-row items-center justify-between text-base leading-8">
+        <div className="pt-5 border-t-2 border-white flex flex-col 2xl:flex-row items-start 2xl:items-center justify-between text-base leading-8 gap-8">
           <div>
             <p>© 2024 Datavocity Network Enterprise, All Rights Reserved.</p>
           </div>
           <div>
-            <ul className="flex items-center gap-4">
+            <ul className="flex 2xl:flex-row flex-col items-start 2xl:items-center 2xl:gap-4">
               <li>
-                Do Not Sell My Information <span className="pl-3">||</span>{" "}
+                Do Not Sell My Information{" "}
+                <span className="pl-3 hidden 2xl:inline-block">||</span>{" "}
               </li>
               <li>
-                Privacy Policy <span className="pl-3">||</span>
+                Privacy Policy{" "}
+                <span className="pl-3 hidden 2xl:inline-block">||</span>
               </li>
               <li>
-                Terms & Conditions <span className="pl-3">||</span>
+                Terms & Conditions{" "}
+                <span className="pl-3 hidden 2xl:inline-block">||</span>
               </li>
               <li>Site Map</li>
             </ul>

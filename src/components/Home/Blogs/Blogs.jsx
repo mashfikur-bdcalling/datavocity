@@ -4,16 +4,16 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 const Blogs = () => {
   return (
-    <div className="pt-36 pb-48 relative">
+    <div className="2xl:pt-36 2xl:pb-48 relative px-6 py-10 2xl:px-0 2xl:py-0">
       {/* content wrapper */}
       <div className="container ">
         <div>
           {/* intro seciton */}
-          <div className="flex items-start justify-between pb-12">
+          <div className="flex flex-col 2xl:flex-row  2xl:items-start justify-between pb-6 2xl:pb-12">
             <div>
               <SectionTitle>Blog & News</SectionTitle>
             </div>
-            <div className="max-w-[70%]">
+            <div className="2xl:max-w-[70%]">
               <SectionText>
                 Find new and informative blogs and news on our and whole world’s
                 updates on tech world. Take a simple break from your work and

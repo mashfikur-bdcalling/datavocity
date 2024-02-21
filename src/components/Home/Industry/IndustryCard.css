@@ -29,3 +29,9 @@
     transform: rotateY(180deg);
   }
 }
+
+@media screen and (min-width: 375px) and (max-width: 479px) {
+  .industry-card {
+    background-size: 100% 100%;
+  }
+}

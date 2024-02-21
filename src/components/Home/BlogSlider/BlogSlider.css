@@ -1,3 +1,9 @@
-.swiper-wrapper{
-    padding-bottom: 6.5rem;
+.swiper-wrapper {
+  padding-bottom: 6.5rem;
+}
+
+@media screen and (min-width: 375px) and (max-width: 479px) {
+  .swiper-wrapper {
+    padding-bottom: 3rem;
+  }
 }
